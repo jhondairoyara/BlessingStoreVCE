@@ -2,7 +2,7 @@
 
 ## 🖼️ Vista Previa
 
-![Captura de pantalla del carrito de compras](./img-screenshot-01.png)
+![Captura de pantalla del carrito de compras](./src/assets/img/img-screenshot-01.png)
 
 ---
 
