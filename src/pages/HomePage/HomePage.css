@@ -1,0 +1,76 @@
+/* src/pages/HomePage.css */
+
+.main-home {
+  padding: 4rem 3rem 0 3rem;
+}
+
+.main__hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.main__hero h2 {
+  font-family: 'LeagueSpartan-Bold';
+  font-size: 5.2rem;
+  color: var(--color-white);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+  background-color: var(--color-white);
+  opacity: 0.4;
+}
+
+.main__hero-buttons {
+  font-family: 'LeagueSpartan-Bold';
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+}
+
+.main__btn {
+  text-align: center;
+  border-radius: 2rem;
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-decoration: none;
+  width: 22rem;
+  transition: all 0.3s ease;
+}
+
+.main__btn strong {
+  font-size: 4.8rem;
+}
+
+.main__btn span {
+  font-size: 2.0rem;
+}
+
+.main__btn--yellow {
+  background-color: var(--color-primary);
+  color: var(--color-tertiary);
+  width: 50rem;
+  height: 10rem;
+}
+
+.main__btn--dark {
+  background-color: var(--color-gray);
+  color: var(--color-white);
+  width: 50rem;
+  height: 10rem;
+}
+
+.main__btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 0.5rem 1rem var(--color-tertiary);
+}

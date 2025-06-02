@@ -1,0 +1,324 @@
+/* src/components/Header/Header.css */
+
+header {
+  background-color: var(--color-tertiary);
+  height: 16rem;
+  padding: 1.5rem 3rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding-top: 2.5rem;
+  border-bottom-left-radius: 4.0rem;
+  border-bottom-right-radius: 4.0rem;
+}
+
+.header__first-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.0rem;
+  flex: 1.4;
+}
+
+.header__logo {
+  width: 4rem;
+  height: auto;
+}
+
+.header__logo img {
+  width: 5.0rem;
+  height: auto;
+}
+
+.header__logo-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header__title a {
+  font-family: 'AlexBrush-Regular';
+  font-size: 3.6rem;
+  color: var(--color-white);
+  text-decoration: none;
+  margin-left: 1.6rem;
+}
+
+.header__location {
+  font-family: 'Poppins-Bold';
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--color-secondary);
+  padding: 0.5rem 1rem;
+  border-radius: 1.0rem;
+  font-size: 1.2rem;
+  width: 15rem;
+  height: 5.0rem;
+  color: var(--color-white);
+  position: relative;
+  cursor: pointer;
+}
+
+.header__location img {
+  width: 2.4rem;
+}
+
+.location-form {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background-color: var(--color-tertiary);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  width: 26rem;
+  z-index: 1000;
+  color: var(--color-white);
+}
+
+.header__location:hover .location-form {
+  display: flex;
+}
+
+.location-form .location-title {
+  font-size: 1.4rem;
+  font-family: 'Poppins-Bold';
+  margin-bottom: 0.3rem;
+}
+
+.location-form .location-subtitle {
+  font-size: 1rem;
+  font-family: 'Poppins-Medium';
+  margin-bottom: 1rem;
+}
+
+.location-form label {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  font-family: 'Poppins-Bold';
+}
+
+.location-form select,
+.location-form input {
+  margin-top: 0.3rem;
+  padding: 0.6rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  font-family: 'Poppins-Medium';
+}
+
+.location-form input::placeholder {
+  color: var(--color-white);
+}
+
+.location-form .location-submit {
+  margin-top: 1.5rem;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  border: none;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  font-family: 'Poppins-Bold';
+  cursor: pointer;
+}
+
+.header__second-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+  flex: 3;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.search-form {
+  display: flex;
+  width: 100%;
+  max-width: 80rem;
+  height: 4.2rem;
+  align-items: center;
+  background-color: var(--color-secondary);
+  border-radius: 2.5rem;
+  padding: 0 1.2rem;
+  gap: 0.8rem;
+  overflow: hidden;
+  flex: 1;
+}
+
+.search-form input[type="search"] {
+  font-family: 'Poppins-Medium';
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--color-white);
+  font-size: 1.4rem;
+  padding: 0.8rem 1rem;
+  width: 100%;
+}
+
+.search-form input::placeholder {
+  color: var(--color-white);
+}
+
+.search-form button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-form button img {
+  width: 2rem;
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
+}
+
+nav li {
+  position: relative;
+}
+
+nav a {
+  font-family: 'Poppins-Bold';
+  text-decoration: none;
+  color: var(--color-white);
+  background-color: var(--color-secondary);
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+.header__third-section {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.header__third-section #access {
+  font-family: 'Poppins-Medium';
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+  background-color: var(--color-white);
+  color: var(--color-secondary);
+  padding: 0.5rem 1.2rem;
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+
+.header__third-section #access:hover {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  transform: translateY(-0.2rem);
+}
+
+.header__third-section a img {
+  width: 2.4rem;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.header__third-section a:hover img {
+  transform: scale(1.15);
+  filter: brightness(1.2);
+}
+
+.header__third-section a:nth-child(2),
+.header__third-section a:nth-child(3) {
+  background-color: transparent;
+  padding: 0;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  border: none;
+  font-size: 1.2rem;
+  font-family: 'Poppins-Bold';
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dropdown-toggle:hover {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+.dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 0.5rem;
+  background-color: var(--color-gray);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  z-index: 1000;
+  min-width: 16rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0s 0.2s;
+}
+
+.dropdown-menu li {
+  margin-bottom: 0.5rem;
+}
+
+.dropdown-menu li:last-child {
+  margin-bottom: 0;
+}
+
+.dropdown-menu a {
+  color: var(--color-white);
+  background-color: var(--color-gray);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.dropdown-menu a:hover {
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease, visibility 0s 0s;
+}
